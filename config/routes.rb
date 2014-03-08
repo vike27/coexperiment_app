@@ -1,5 +1,7 @@
 CoexperimentApp::Application.routes.draw do
-  root  'static_pages#home'
+  get "static_pages/home"
+  get "static_pages/signup"
+  get "static_pages/browse"
   resources :users
   resources :comments
   resources :experiments
